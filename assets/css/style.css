@@ -163,8 +163,8 @@ input::placeholder, select option{
 	max-width: 333px;
 	margin: 92px auto;
 }
-.menu-text{
-	margin-left:105px;
+.menu-text {
+	margin-left: 86px;
 }
 .modal-body ul li{
 	line-height: 45px;
@@ -308,8 +308,8 @@ input::placeholder, select option{
 .product-button a {
 	display: block;
 	padding: 7px 20px;
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #333;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 15px;
