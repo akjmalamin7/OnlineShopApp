@@ -88,13 +88,35 @@ h6{
 }
 
 /* FORM STYLE */
-input, textarea, button, select{
+input, textarea, select{
 	border-radius: 0px !important;
+	border:none !important;
+	border-bottom:1px solid #a0a0a0 !important;
 }
-input:focus, button:focus, select:focus{
+input:focus{
     outline: 0 none !important;
     -webkit-box-shadow: unset !important;
 			box-shadow: unset !important;
+			border-bottom:1px solid #EE4994 !important;
+}
+select{
+	border-radius: 0px !important;
+	border:1px solid #a0a0a0 !important;
+}
+select:focus{
+	border:1px solid #EE4994 !important;
+	-webkit-box-shadow: unset !important;
+	box-shadow: unset !important;
+}
+button{
+	border:none !important;
+	border-radius:none !important;
+
+}
+button:focus{
+	border:none !important;
+	-webkit-box-shadow: unset !important;
+	box-shadow: unset !important;
 }
 input::placeholder, select option{
 	font-family: 'Source Sans Pro' !important;
@@ -102,6 +124,32 @@ input::placeholder, select option{
 }
 ::placeholder{
 	font-size:16px;
+}
+.custom-select {
+	display: inline-block;
+	width: 100%;
+	padding: 5px 5px;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	height:unset;
+
+}
+/* fixed header */
+.fixed-header {
+	background: #fff !important;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transition: .5s;
+	/* box-shadow: 0px 1px 19px rgba(0,0,0,.1); */
+}
+.modal-backdrop {
+	z-index: 99;
 }
 /***************************************************************************************************
 ******************************************* END GLOBAL AREA CSS ************************************
@@ -120,7 +168,7 @@ input::placeholder, select option{
 	width:70px;
 }
 .logo-size-mobile{
-	width:40px;
+	width:32px;
 }
 #mynav{
 	position: absolute;
@@ -142,15 +190,17 @@ input::placeholder, select option{
 }
 
 .header-column2 .contact-icon i {
-	font-size: 15px;
+	font-size: 12px;
 	color: #EE4994;
 }
 
-
-.menu-cart i{
-	font-size: 23px;
+.menu-cart i {
+	font-size: 18px;
 	margin-top: 10px;
-	color:#EE4994;
+	color: #EE4994;
+}
+.header-column2 h5{
+	font-size:16px;
 }
 /* modal */
 .modal-header{
@@ -160,19 +210,20 @@ input::placeholder, select option{
 	border-top:1px solid #717171;
 }
 .modal-dialog {
-	max-width: 333px;
+	max-width: 275px;
 	margin: 92px auto;
 }
 .menu-text {
-	margin-left: 86px;
+	margin-left: 68px;
 }
-.modal-body ul li{
-	line-height: 45px;
+.modal-body ul li {
+	line-height: 38px;
 }
 .modal-body ul li a {
 	color: #333;
 	font-weight: 600;
 	letter-spacing: .2px;
+	font-size: 16px;
 }
 .modal-body ul li a i{
 	color:#EF4F98;
@@ -184,14 +235,7 @@ input::placeholder, select option{
 	overflow: hidden;
 	border-top: 1px solid #333;
 }
-.navbar-toggler {
-	padding: 0.25rem .75rem;
-	font-size: 1.25rem;
-	line-height: 1;
-	background-color: transparent;
-	border: 1px solid #a0a0a0;
-	border-radius: .25rem !important;
-}
+
 /***************************************************************************************************
 *****************************************END HEADER SECTION CSS*************************************
 ****************************************************************************************************/
@@ -226,11 +270,11 @@ input::placeholder, select option{
 	object-fit: cover;
 }
 .slick-dots {
-	bottom: 19px;
+	bottom: 10px;
 	z-index: 99;
 }
 .slick-dots li button::before {
-	font-size: 43px !important;
+	font-size: 22px !important;
 	color: #EE4994;
 }
 .slick-dots li.slick-active button::before {
@@ -244,29 +288,32 @@ input::placeholder, select option{
 
 /* start prodcut category section */
 .single-product-area .card {
-	background-color: #EE4994;
+	background-color: #fff;
 	border: 0px !important;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
 	border-radius: 0px !important;
 	margin-bottom: 27px;
+	margin: 5px;
 }
-.single-product-area .card .card-image{
-	width: 100px;
-	height: 100px;
+.single-product-area .card .card-image {
+	width: 60px;
+	height: 60px;
 	margin: 0 auto;
-	margin-top:15px;
+	margin-top: 9px;
 }
 .single-product-area .card .card-image img{
 	width:100%;
 	height:100%;
 	border-radius: 500%;;
 }
-.single-product-area .card .card-body h5{
-	color:#fff;
+.single-product-area .card .card-body h5 {
+	color: #333;
+	font-size: 14px;
 }
 .product-height {
-	height: 235px;
+	height: 125px;
 }
+
 /* .item-6 {
 	width: 49%;
 	margin-bottom: 10px;
@@ -288,43 +335,137 @@ input::placeholder, select option{
 *************************************  START PRODUCT PAGE CSS  *************************************
 ****************************************************************************************************/
 .product-section .single-product .card {
-	background-color: #EE4994;
-	color: #fff;
+	background-color: #ffff;
+	color: #333;
 	border: none !important;
 	border-radius: 0px !important;
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	margin: 5px;
 }
 .product-section .single-product {
-	margin-bottom:26px;
+
 }
 .product-section .single-product .card .card-image{
 	padding:20px 20px 0px 20px;
 	border-radius: none !important;
 }
-
+.card-body {
+	padding: 12px;
+}
 .card-img, .card-img-top {
 	border-radius: 0px !important;
 }
 .product-button a {
 	display: block;
 	padding: 7px 20px;
-	background-color: #fff;
-	color: #333;
+	background-color: #EE4994;
+	color: #fff;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 12px;
 	border: 0px solid transparent;
 	margin-top: 28px;
 }
-.single-product .card p{
-	font-size:17px !important;
+.single-product .card p {
+	font-size: 15px !important;
+	color: #333;
 }
 .table td, .table th{
 	padding:0px !important;
+	color:#333;
 }
 p strong{
 	font-weight: 600 !important;
 }
+th strong{
+	font-weight: 600 !important;
+	font-size:15px !important;
+}
 /***************************************************************************************************
-****************************************  EN PRODUCT PAGE CSS  *************************************
+****************************************  END PRODUCT PAGE CSS  ************************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+**************************************** START PRODUCT DETAILS PAGE CSS ****************************
+****************************************************************************************************/
+.promo-offer, .delivery-information, .payment-information, .customer-information, .product-information{
+	border:1px solid #717171;
+	padding:10px;
+}
+.promo-offer .card, .delivery-information .card, .payment-information .card, .customer-information .card, .product-information .card{
+	border:none !important;
+}
+.product-information .card .card-body p{
+	font-size:16px;
+}
+.product-information .card .card-body table tr td{
+	font-size:16px;
+}
+.product-information .card .card-body table tr td strong{
+	font-size:15px;
+}
+
+/* card body bottom */
+.card-body-bottom p{
+	font-size:13px !important;
+}
+.card-body-bottom p strong{
+	font-size:13px !important;
+}
+.clear-cart-button a {
+	font-size: 13px;
+	text-transform: uppercase;
+	background: #ff0000b5;
+	color: #fff;
+	opacity: 1;
+	padding: 3px 10px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: unset;
+ 	padding: unset;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+.delivery-information label, .customer-information  label{
+	font-size:15px !important;
+	margin-bottom:unset;
+	
+}
+.bkash{
+	width:16px;
+	display: block;
+}
+.form-check-label{
+	font-size:15px;
+}
+.form-check-input {
+	margin-top: 9px;
+}
+
+.delivery-information p{
+	font-size: 12px !important;
+	color: #6c6868;
+}
+.btn {
+	font-size: 12px;
+	background-color: #EE4994;
+	border-radius: 0px !important;
+	padding: 5px 21px;
+}
+
+.no-claim{
+	padding:10px;
+}
+.no-claim .card{
+	border:none !important;
+}
+.no-claim p{
+	font-size:12px;
+}
+
+/***************************************************************************************************
+**************************************** END PRODUCT DETAILS PAGE CSS ******************************
 ****************************************************************************************************/

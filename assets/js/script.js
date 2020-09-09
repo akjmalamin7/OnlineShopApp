@@ -12,8 +12,17 @@ jQuery(document).ready(function(){
             cssEase: 'linear',
             autoplay: true,
             autoplaySpeed: 3000,
-            dots: false
+            dots: true
         });
    
      
+});
+//sticky header
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+    }
 });
