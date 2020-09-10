@@ -195,8 +195,8 @@ input::placeholder, select option{
 }
 
 .menu-cart i {
-	font-size: 18px;
-	margin-top: 10px;
+	font-size: 20px;
+	margin-top: 5px;
 	color: #EE4994;
 }
 .header-column2 h5{
@@ -455,7 +455,9 @@ th strong{
 	border-radius: 0px !important;
 	padding: 5px 21px;
 }
-
+h4{
+	font-size:18px;
+}
 .no-claim{
 	padding:10px;
 }
@@ -465,7 +467,42 @@ th strong{
 .no-claim p{
 	font-size:12px;
 }
-
+.submit-area strong{
+	font-size:12px;
+}
+.submit-area input{
+	background-color: #EE4994;
+	color:#fff;
+	font-size: 12px;
+	border-bottom: none !important;
+	padding: 7px 11px;
+	text-transform: uppercase;
+}
 /***************************************************************************************************
 **************************************** END PRODUCT DETAILS PAGE CSS ******************************
+****************************************************************************************************/
+
+/***************************************************************************************************
+****************************************START ORDER HISTORY AND PAY PAGE CSS************************
+****************************************************************************************************/
+.order-history-section button{
+	width:130px;
+	color:#fff;
+}
+.order-history-section button:hover{
+	color:#fff;
+}
+.pay input {
+	/* width: 160px; */
+	background: #F0569C;
+	color: #fff;
+	border-bottom: none !important;
+	font-size: 12px;
+	padding: 7px 59px;
+}
+.contact .contact-icon i{
+	color: #F0569C;
+}
+/***************************************************************************************************
+****************************************END ORDER HISTORY AND PAY PAGE CSS**************************
 ****************************************************************************************************/
